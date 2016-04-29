@@ -1,7 +1,7 @@
 var http = require('http');
 var request = require('./wssgRequest');
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var server = http.createServer(onRequest);
 
